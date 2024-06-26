@@ -1,0 +1,14 @@
+<odoo>
+    <record id="view_picking_form_barcode" model="ir.ui.view">
+        <field name="name">stock.picking.form.barcode</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+            <sheet>
+                <group>
+                    <field name="scanned_barcode"/>
+                </group>
+            </sheet>
+        </field>
+    </record>
+</odoo>
